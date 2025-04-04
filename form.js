@@ -53,6 +53,7 @@ function kimlikIslemi() {
       alert("Hatalı şifre. Lütfen tekrar deneyiniz.");
     } else {
       alert("Giriş başarılı.");
+      window.location.href = "anasayfa.html";
     }
   }
 }

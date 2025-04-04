@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.logo-container h2:hover {
+    color: #ff9800;
+}
+
+.header a {
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #ff9800;
+}
+
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-container {
+    background: linear-gradient(135deg, #6e7dff, #5560ea);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 16px 32px rgb(253, 253, 253);
+    width: 100%;
+    max-width: 500px;
+}
+
+.payment-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #6e7dff;
+    box-shadow: 0 0 8px rgba(110, 125, 255, 0.8);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #6e7dff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-width 0.3s ease;
+    border-width: 2px;
+}
+
+.submit-btn:hover {
+    background-color: #0f1125;
+    border-width: 3px;
+}
+
+@media (max-width: 600px) {
+    .payment-container {
+        padding: 15px;
+    }
+
+    .payment-card {
+        padding: 20px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

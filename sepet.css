@@ -1,0 +1,136 @@
+body {
+    background: #262626;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    overflow-y: auto;
+    /* Sayfada scroll bar ekler */
+    min-height: 100vh;
+    /* Tüm ekranı kaplamak için */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('src//arkaplan-logo/sepet-arkaplan.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.logo-container h2:hover {
+    color: #ff9800;
+}
+
+.header a {
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #ff9800;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 120px auto 50px auto;
+    /* Üst marjı artırarak header altına çekildi */
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    /* max-height ve overflow-y kaldırıldı, içerik arttıkça kutu büyüyecek */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+}
+
+.cart-item-price {
+    font-weight: bold;
+}
+
+.total-price {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.complete-payment {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 20px;
+    background: #ff9800;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.complete-payment:hover {
+    background: white;
+    color: black;
+}

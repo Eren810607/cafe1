@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sepetim</title>
+    <link rel="stylesheet" href="sepet.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img src="src//arkaplan-logo/coffee.png" alt="Coffee Logo" />
+        <h2
+          onclick="window.location.href='anasayfa.html';"
+          style="cursor: pointer"
+        >
+          SPECIALTY COFFEE
+        </h2>
+      </div>
+      <a href="anasayfa.html">Anasayfa</a>
+      <a href="Menu.html">Menü</a>
+      <a href="sepet.html">Sepet</a>
+      <a href="odeme.html">Ödeme</a>
+    </div>
+
+    <div class="cart-container">
+      <h2>Sepetiniz</h2>
+      <div id="cart-items"></div>
+      <div class="total-price" id="total-price">Toplam: 0₺</div>
+      <button class="complete-payment" id="complete-payment">
+        Ödemeyi Tamamla
+      </button>
+    </div>
+
+    <script src="sepet.js"></script>
+  </body>
+</html>

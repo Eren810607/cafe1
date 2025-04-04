@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ödeme Ekranı</title>
+    <link rel="stylesheet" href="odeme.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img src="src/arkaplan-logo/coffee.png" alt="Coffee Logo" />
+        <h2 onclick="goToPage('anasayfa.html')" style="cursor: pointer">
+          SPECIALTY COFFEE
+        </h2>
+      </div>
+      <a href="anasayfa.html">Anasayfa</a>
+      <a href="menu.html">Menü</a>
+      <a href="sepet.html">Sepet</a>
+      <a href="odeme.html">Ödeme</a>
+    </div>
+
+    <div class="payment-container">
+      <div class="payment-card">
+        <h2>Ödeme Bilgileri</h2>
+        <form id="payment-form">
+          <div class="input-group">
+            <label for="card-number">Kart Numarası</label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              placeholder="•••• •••• •••• ••••"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="card-name">Kart Üzerindeki İsim</label>
+            <input
+              type="text"
+              id="card-name"
+              name="card-name"
+              placeholder="Adınız Soyadınız"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="expiry-date">Son Kullanma Tarihi</label>
+            <input
+              type="text"
+              id="expiry-date"
+              name="expiry-date"
+              placeholder="MM/YY"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="cvc">Güvenlik Kodu</label>
+            <input
+              type="text"
+              id="cvc"
+              name="cvc"
+              placeholder="•••"
+              required
+              maxlength="3"
+            />
+          </div>
+          <button type="submit" class="submit-btn">Ödemeyi Tamamla</button>
+        </form>
+      </div>
+    </div>
+    <script src="odeme.js"></script>
+  </body>
+</html>
